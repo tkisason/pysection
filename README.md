@@ -16,16 +16,20 @@ The container is based on Ubuntu 20.04, so it's easy to apt additional tools, an
 
 # Build
 
-Build the image with: `docker build -t pysection .`
+Build the image with:
 
-Run the container, and export the current working dir to /data with: `docker run --rm -it -v $(pwd):/data pysection`
+`docker build -t pysection .`
+
+Run the container, and export the current working dir to /data with:
+
+`docker run --rm -it -v $(pwd):/data pysection`
 
 After that, you can use the container to conduct your analysis.
 
 
-# NOTE
+# Note
 
-According to the DeadSnakes wiki : `Supported Ubuntu and Python Versions`:
+**According to the DeadSnakes wiki : Supported Ubuntu and Python Versions**:
 - Ubuntu 16.04 (xenial) Python 2.3 - Python 2.6, Python 3.1 - Python3.4, Python 3.6 - Python3.9
 - Ubuntu 18.04 (bionic) Python2.3 - Python 2.6, Python 3.1 - Python 3.5, Python3.7 - Python3.9
 - Ubuntu 20.04 (focal) Python3.5 - Python3.7, Python3.9
@@ -44,6 +48,6 @@ The packages provided here are loosely based on the debian upstream packages wit
 
 **You can rebuild the docker container for a specific version of Ubuntu to get other versions of python.**
 
-## Useful docs
+## Useful references
 
 * https://github.com/extremecoders-re/pyinstxtractor/wiki/Extracting-Linux-ELF-binaries
